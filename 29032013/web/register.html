@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link href="styles/layout.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="tcal.css" />
+	<script type="text/javascript" src="tcal.js"></script> 
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:410px;
+	top:27px;
+	width:477px;
+	height:497px;
+	z-index:1;
+}
+.style2 {
+	font-size: xx-large;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #FF0000;
+}
+#Layer2 {
+	position:absolute;
+	left:20px;
+	top:30px;
+	width:60px;
+	height:54px;
+	z-index:2;
+}
+-->
+</style>
+</head>
+<body>
+
+<div id="Layer2">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="65" height="56">
+    <param name="movie" value="button2.swf" />
+    <param name="quality" value="high" />
+    <param name="bgcolor" value="" />
+    <embed src="button2.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="65" height="56" bgcolor="#00FF33"></embed>
+  </object>
+</div>
+<form id="form1" name="form1" method="post" action="register.jsp">
+<div id="Layer1" style="border:ridge; border-width:thick">
+  <table width="90%" height="501" border="0">
+    <tr>
+      <td colspan="3" align="center"><span class="style2">Signup</span></td>
+    </tr>
+    <tr>
+      <td width="44%" align="right"><strong>First Name </strong></td>
+      <td width="5%">&nbsp;</td>
+      <td width="51%">
+        <input name="f_name" type="text" id="f_name" size="30" maxlength="30"  required="required"/>            </td>
+    </tr>
+    <tr>
+      <td align="right"><strong>Last Name </strong></td>
+      <td>&nbsp;</td>
+      <td>
+        <input name="l_name" type="text" id="l_name" size="30" maxlength="30" required="required"/>        </td>
+    </tr>
+    <tr>
+      <td align="right"><strong>Email id </strong></td>
+      <td>&nbsp;</td>
+      <td>
+        <input name="eid" type="text" id="eid" size="30" maxlength="30"  required="required"/>          </td>
+    </tr>
+    <tr>
+      <td align="right"><strong>DOB</strong></td>
+      <td>&nbsp;</td>
+      <td><input type="text" name="dob" class="tcal" value="" /></td>
+    </tr>
+    <tr>
+      <td align="right"><strong>Phone Number </strong></td>
+      <td>&nbsp;</td>
+      <td><input name="phno" type="text" id="phno" size="20" maxlength="10"  required="required"/></td>
+    </tr>
+    <tr>
+      <td align="right"><strong>Place</strong></td>
+      <td>&nbsp;</td>
+      <td><input name="place" type="text" id="place" size="20" maxlength="20" /></td>
+    </tr>
+    <tr>
+      <td align="right"><strong>Aadhar Id </strong></td>
+      <td>&nbsp;</td>
+      <td><input name="aadharid" type="text" id="aadharid" size="15" maxlength="15" required="required" /></td>
+    </tr>
+    <tr>
+      <td colspan="3" align="center"><input name="register" type="submit" id="register" value="Register" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input name="reset" type="reset" id="reset" value="Reset" /></td>
+    </tr>
+  </table>
+</div></form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/*
+Template Name: PhotoFolio
+File: Featured Slider CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+#featured_slide{
+	display:block;
+	width:960px;
+	height:380px;
+	margin:0 auto;
+	padding:0;
+	font-size:12px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}
+
+/* ----------------------------------------------Main Category Slider-------------------------------------*/
+
+#slider, #slider ul{
+	position:relative;
+	width:775px;
+	height:400px;
+	}
+
+#slider ul{
+	display:block;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+#slider li{
+	position:absolute;
+	top:0;
+	width:160px;
+	height:355px;
+	padding:11px;
+	border:1px solid #464646;
+	overflow:hidden;
+	background-color: #FFFFFF;
+	background-image: url(../images/8.jpg);
+	}
+
+#slider li img, #slider li h2, #slider li p{
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	line-height:normal;
+	}
+
+#slider li img{
+	width:150px;
+	height:110px;
+	margin:0 0 10px 0;
+	padding:4px;
+	border:1px solid #FF9999;
+	}
+
+#slider li h2{
+	margin-bottom:10px;
+	padding-bottom:10px;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	color:#AA0000;
+	border-bottom:1px solid #464646;
+	}
+
+#slider li p{
+	line-height:1.6em;
+	margin:0 0 12px 0;
+	}
+
+#slider li p.readmore{
+	margin:0;
+	text-align:right;
+	}
+
+#slider li p.readmore a{
+	font-weight:bold;
+	line-height:normal;
+	color:#000080;
+	text-decoration:none;
+	}
+
+/* ----------------------------------------------Previous & Next Navigation-------------------------------------*/
+
+#slider a.next, #slider a.prev{
+	position:absolute;
+	top:187px;
+	width:76px;
+	height:36px;
+	cursor:pointer;
+	outline:none;
+	z-index:1000;
+	background:#FF6699 center center no-repeat;
+	border:1px solid #464646;
+	background-color: #808080;
+	}
+
+#slider a.next{
+	right:-37px;
+	background-image:url("../images/next.png");
+	border-left-color:#FF6699;
+	}
+
+#slider a.prev{
+	left:-27px;
+	background-image:url("../images/prev.png");
+	border-right-color:#FF6699;
+	}
+
+#slider a.prev:hover, #slider a.next:hover{
+	border-color:#CCCCCC;
+	}
+
+#slider a.disabled, #slider a.disabled:hover{
+	border:#FFCC99; /* Same colour as container background */
+	cursor:default;
+	}

@@ -1,0 +1,12 @@
+EID,GID,PHOTO_ID,DESCRIPTION,PATH,STATUS
+vikram.pedamallu@gmail.com,no,Love,caption ela vundi ? do you agree then comment ,data_pics/(R)Love_You_Too_Much.jpg,1
+vikram.pedamallu@gmail.com,no,love is valueble,correct na ?,data_pics/1-1426182-9131-t.jpg,1
+vikram.pedamallu@gmail.com,no,happy2,joy full moment2,data_pics/f7.jpg,1
+vikram.pedamallu@gmail.com,no,alone ,manam evarinana vadilesthey adi vontari tanam kani manalni evarina vadilesthey mana doubrbagyam ,data_pics/3919183.jpg,1
+vikram.pedamallu@gmail.com,no,happy14,joy full moment6,data_pics/25_1525.jpg,1
+vikram.pedamallu@gmail.com,no,study weds enjoy,nice equation,data_pics/4pxlpj8.jpg,1
+vikram.pedamallu@gmail.com,no,love proposal,Propose ila cheyali,data_pics/ATcAAAAhVRQihPtDeWOCss4T4RsKl8wuXB-MP8M8Zo5e_y0hI9ZiFDJZzwfw.jpg,1
+alekhya.pinky50@gmail.com,no,shark,shark in the blue water,data_pics\6.jpg,1
+vikram.pedamallu@gmail.com,no,happy13,joy full moment3,data_pics/25_1525.jpg,1
+alekhya.pinky50@gmail.com,no,aeroplne,big jumbo jet,data_pics\f7.jpg,1
+vikram.pedamallu@gmail.com,no,hello ,pic ela vundi evarina comment pettandi ,data_pics/images (3).jpg,1

@@ -1,0 +1,6 @@
+Id,HEADING,DESCRIPTION
+Admin,Greetings,Hai every Body ......!
+vikram.pedamallu@gmail.com,Reply,Hai Admin..
+Vamsi,News,Bomb Blast at Hyderabad
+Krishna ,news,when it happned ?
+vikram.pedamallu@gmail.com,Headingdsfdsf,Post Your News Heredsfdsf

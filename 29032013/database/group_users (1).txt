@@ -1,0 +1,4 @@
+EID,GNAME
+vikram.pedamallu@gmail.com,Classmate's
+vikram.pedamallu@gmail.com,Aditya'ns
+vikram.pedamallu@gmail.com,Rockers Zone

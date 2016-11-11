@@ -1,0 +1,16 @@
+F_NAME,L_NAME,EID,PASSWORD,DOB,PHNO,PLACE,AADHARID,PROFILE_PIC,STATUS
+vikramaditya,pedamallu,vikram.pedamallu@gmail.com,aditya,9000583717,03/07/1992,Rajamundry,09p31a05a2,data_pics/7316.jpg,2
+swathi,gorre,swathi.smile4@gmail.com,aditya,9391355551,03/12/1991,kakinada,09p31a0574,data_pics/3.jpg,1
+vinod,ask,vinod@gmail.com,aditya,421222225,02030744,333333333,33333333,data_pics/3.jpg,2
+kumar,pedamallu,kumar@gmail.com,03071991,9391355551,03071991,rajahmundry,09pp31a05a2,data_pics/3.jpg,1
+sagari,pedamallu,sagari@gmail.com,03/07/1991,9493791371,03/07/1991,Rajahmundry,sagari,data_pics/4.jpg,1
+vikramaditya,pedamallu,vikram.pedamallu@gmail.com,03/07/1992,9000583717,03/07/1992,Rajamundry,abcdef123456,data_pics/1.jpg,2
+gupta,ssrkm,gupta@gmail.com,05/05/1962,9000583717,05/05/1962,peddapuram,123456789012,data_pics/5.jpg,1
+gayathri,pedamallu,gayathri@gmail.com,03/07/1991,9000583717,03/07/1991,Rajahmundry,123456789123,data_pics/3.jpg,1
+alekhya1,pitani,alekhya@gmail.com,0000,11111,0000,1111,1111,data_pics/3.jpg,1
+sagari,pedamallu,ssa,03/07/2001,ww,03/07/2001,ww,ww,aditya,1
+sagari,pedamallu,ssawww,03/08/2001,ww,03/08/2001,ww,wwww,aditya,3
+alekhya,pitani,alekhya.pinky50@gmail.com,02/03/1992,9000583717,02/03/1992,rajahmundry,123456852,data_pics/a.bmp,2
+vamsi,krishna,vamsi@gmail.com,03/01/2013,9000583717,03/01/2013,aadad,aaaaaaaaaaaa,data_pics/7316.jpg,2
+gayathri,pedamallu,g@gmail.com,03/02/2013,9000583717,03/02/2013,aadad,aaaaaaaaaaaaww,data_pics/bala.jpg,2
+first name,last name,email @id.com,,01/01/1991,,Place,Unique Aadhar,aditya,3

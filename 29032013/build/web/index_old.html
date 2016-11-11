@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="jquery-1.3.2.js"></script>
+        <script type="text/javascript" src="ui.core.js"></script>
+        <script type="text/javascript" src="ui.sortable.js"></script>
+
+
+<style type="text/css">
+
+    <!--
+body {
+	background-color: #FFFFFF;
+	background-image: url(images/bg.jpg);
+}
+#Layer1 {
+	position:absolute;
+	left:733px;
+	top:91px;
+	width:247px;
+	height:129px;
+	z-index:1;
+}
+.style1 {color: #FF00FF}
+.style2 {
+	color: #FF0055;
+	font-weight: bold;
+}
+.style3 {color: #2A00FF}
+.style4 {color: #2A1FFF}
+#Layer2 {
+	position:absolute;
+	left:14px;
+	top:134px;
+	width:704px;
+	height:394px;
+	z-index:2;
+}
+#Layer3 {
+	position:absolute;
+	left:29px;
+	top:41px;
+	width:693px;
+	height:120px;
+	z-index:3;
+}
+.style5 {
+	font-size: 72px;
+	color: #0000FF;
+}
+.style6 {color: #800000}
+.style7 {color: #D41F00}
+.style8 {color: #AA7FAA}
+.style9 {color: #2A7FFF}
+.style10 {color: #99FFFF}
+.style11 {color: #808000}
+.style12 {color: #D41FAA}
+.style13 {color: #FFCCFF}
+.style14 {color: #FFFF55}
+.style15 {color: #00BFAA}
+.style16 {color: #FFDFAA}
+.style17 {color: #2A9F00}
+.style18 {color: #FF0000}
+-->
+</style>
+        <style type="text/css">
+            body{
+                background-color: #2daebf;
+            }
+            form.registration{
+                width:600px;
+                margin: 10px auto;
+                padding:10px;
+                font-family: "Trebuchet MS";
+            }
+            form.registration fieldset{
+                background-color:#707070;
+                border:none;
+                padding:10px;
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                -moz-border-radius: 15px;
+                -webkit-border-radius: 15px;
+                padding:6px;
+                margin:0px 30px 0px 0px;
+            }
+            form.registration legend{
+                text-align:left;
+                color:#fff;
+                font-size:14px;
+                padding:0px 4px 15px 4px;
+                margin-left:20px;
+                font-weight:bold;
+            }
+            form.registration label{
+                font-size: 18px;
+                width:200px;
+                float: left;
+                text-align: right;
+                clear:left;
+                margin:4px 4px 0px 0px;
+                padding:0px;
+                color: #FFF;
+                text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+            }
+            form.registration input{
+                font-family: "Trebuchet MS";
+                font-size: 18px;
+                float:left;
+                width:300px;
+                border:1px solid #cccccc;
+                margin:2px 0px 4px 2px;
+                color:#00abdf;
+                height:26px;
+                padding:3px;
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+            }
+            form.registration input:focus, form.registration select:focus{
+                background-color:#E0E6FF;
+            }
+            form.registration select{
+                font-family: "Trebuchet MS";
+                font-size: 20px;
+                float:left;
+                border:1px solid #cccccc;
+                margin:2px 0px 2px 2px;
+                color:#00abdf;
+                height:32px;
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+            }
+            .button, .button:visited{
+                float:right;
+                background: #2daebf url(images/overlay.png) repeat-x;
+                font-weight:bold;
+                display: inline-block;
+                padding: 5px 10px 6px;
+                color: #fff;
+                text-decoration: none;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+                border-bottom: 1px solid rgba(0,0,0,0.25);
+                cursor: pointer;
+                margin-top:95px;
+                margin-right:15px;
+            }
+            .button:hover{
+                background-color: #007d9a;
+            }
+            #sortable {
+                list-style-type: none;
+                margin: 5px 0px 0px 16px;
+                padding: 0;
+            }
+            #sortable li {
+                margin: 3px 3px 3px 0;
+                padding: 1px;
+                float: left;
+                width: 35px;
+                height: 35px;
+                font-size: 20px;
+                text-align: center;
+                line-height:35px;
+                cursor:pointer;
+                -moz-border-radius:5px;
+                -webkit-border-radius:5px;
+                -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+                text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+                background:#2daebf url(images/overlay.png) repeat-x scroll 50% 50%;
+                color:#fff;
+                font-weight:normal;
+            }
+            .captcha_wrap{
+                border:1px solid #fff;
+                -moz-border-radius:10px;
+                -webkit-border-radius:10px;
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                float:left;
+                height:120px;
+                overflow:auto;
+                width:150px;
+                overflow:hidden;
+                margin:0px 0px 0px 210px;
+                background-color:#fff;
+            }
+            .captcha{
+                -moz-border-radius:10px;
+                -webkit-border-radius:10px;
+                font-size:12px;
+                color:#BBBBBB;
+                text-align: center;
+                border-bottom:1px solid #CCC;
+                background-color:#fff;
+            }
+        </style>
+        <script type="text/javascript">
+            (
+            function($){
+
+                $.fn.shuffle = function() {
+                    return this.each(function(){
+                        var items = $(this).children();
+
+                        return (items.length)
+                            ? $(this).html($.shuffle(items,$(this)))
+                        : this;
+                    });
+                }
+
+                $.fn.validate = function() {
+                    var res = false;
+                    this.each(function(){
+                        var arr = $(this).children();
+                        res =( parseInt(arr[0].innerHTML)==1)&&( parseInt(arr[1].innerHTML)==2)&&
+						     ( parseInt(arr[2].innerHTML)==3)&&( parseInt(arr[3].innerHTML)==4)&&
+							 ( parseInt(arr[4].innerHTML)==5)&&( parseInt(arr[5].innerHTML)==6);
+						/*
+						&&
+                            (arr[1].innerHTML=="2")&&
+                            (arr[2].innerHTML=="3")&&
+                            (arr[3].innerHTML=="4")&&
+                            (arr[4].innerHTML=="5")&&
+                            (arr[5].innerHTML.trim()=="6");*/
+                    });
+                    return res;
+                }
+
+                $.shuffle = function(arr,obj) {
+                    for(
+                    var j, x, i = arr.length; i;
+                    j = parseInt(Math.random() * i),
+                    x = arr[--i], arr[i] = arr[j], arr[j] = x
+                );
+                    if(arr[0].innerHTML=="1") obj.html($.shuffle(arr,obj))
+                    else return arr;
+                }
+
+            })(jQuery);
+
+            $(function() {
+                $("#sortable").sortable();
+                $("#sortable").disableSelection();
+                $('ul').shuffle();
+
+                $("#formsubmit").click(function(){
+                  // ($('ul').validate()) ?  alert("Yeah, you are a human!"); : ( alert("No, you are not a human!");
+				   if($('ul').validate())
+				   {
+				      alert ("you are human");
+					  return true;
+                   }else {
+				      alert ("you are not human");
+					  return false;
+                   }
+                });
+            });
+        </script>
+<script language="javascript">
+  function writeFlash(title, w, h) {
+    document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9.0.0.0" width="' + w + '" height="' + h + '" ID="sf" VIEWASTEXT>')
+    document.write('  <param name="movie" value="' + title + '.swf" />')
+    document.write('  <param name="quality" value="high" />')
+    document.write('  <param name="wmode" value="window" />')
+    document.write('  <param name="allowScriptAccess" value="always" />')
+    document.write('  <param name="allowFullScreen" value="true" />')
+    document.write('  <embed src="' + title + '.swf" quality="high" name="sf" allowScriptAccess="always" allowFullScreen="true" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="' + w + '" height="' + h + '"></embed>')
+    document.write('</object>')
+  }
+</script>
+</head>
+<body onLoad="javascript: sf.focus()">
+<div id="Layer3"><img src="images/logo.png" />
+  <!--<p class="style5"><span class="style6">F</span><span class="style7">r</span><span class="style8">i</span><span class="style9">e</span><span class="style10">n</span><span class="style11">d</span> <span class="style12">Z</span><span class="style13">Z</span><span class="style14">e</span><span class="style15">e</span><span class="style16">e</span>.<span class="style17">...</span>.<span class="style18">!</span></p>
+  <p>&nbsp;  </p> -->
+</div>
+<form id="form1" name="form1" method="post" action="login.jsp">
+<div id="Layer1">
+  <table width="245" border="0">
+    <tr>
+        <td colspan="3" align="center"><span><img src="images/login.png" /></span></td>
+    </tr>
+    <tr>
+      <td width="70" align="right"><!--<span class="style3">User id</span> --><img src="images/userid.png" /></td>
+      <td width="6">&nbsp;</td>
+      <td width="145"><input name="uid" type="text" id="uid" required="required"/></td>
+    </tr>
+    <tr>
+      <td align="right"><!--<span class="style4">Password</span> --><img src="images/password.png" /></td>
+      <td>&nbsp;</td>
+      <td><input name="pwd" type="password" id="pwd"  required="required"/></td>
+    </tr>
+    <tr align="center">
+      <td colspan="3">
+        <input name="login" type="submit" id="login" value="Login" />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="reset" type="reset" id="reset" value="Reset" />
+        </td>
+    </tr>
+    <tr>
+      <td colspan="3"><a href="register.html" class="style10">Yet Not Registered ?<br />Sign UP for Free click here </a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div> </form>  
+</body>
+</html>

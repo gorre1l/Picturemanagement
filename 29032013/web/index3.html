@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+	background-image: url(images/bg.jpg);
+}
+#Layer1 {
+	position:absolute;
+	left:733px;
+	top:91px;
+	width:247px;
+	height:129px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:14px;
+	top:134px;
+	width:704px;
+	height:394px;
+	z-index:2;
+}
+#Layer3 {
+	position:absolute;
+	left:29px;
+	top:41px;
+	width:693px;
+	height:120px;
+	z-index:3;
+}
+.style10 {color: #99FFFF}
+.style18 {
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
+</style>
+<script language="javascript">
+  function writeFlash(title, w, h) {
+    document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9.0.0.0" width="' + w + '" height="' + h + '" ID="sf" VIEWASTEXT>')
+    document.write('  <param name="movie" value="' + title + '.swf" />')
+    document.write('  <param name="quality" value="high" />')
+    document.write('  <param name="wmode" value="window" />')
+    document.write('  <param name="allowScriptAccess" value="always" />')
+    document.write('  <param name="allowFullScreen" value="true" />')
+    document.write('  <embed src="' + title + '.swf" quality="high" name="sf" allowScriptAccess="always" allowFullScreen="true" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="' + w + '" height="' + h + '"></embed>')
+    document.write('</object>')
+  }
+</script>
+</head>
+<body onLoad="javascript: sf.focus()">
+<div id="Layer3"><img src="images/logo.png" />
+  <!--<p class="style5"><span class="style6">F</span><span class="style7">r</span><span class="style8">i</span><span class="style9">e</span><span class="style10">n</span><span class="style11">d</span> <span class="style12">Z</span><span class="style13">Z</span><span class="style14">e</span><span class="style15">e</span><span class="style16">e</span>.<span class="style17">...</span>.<span class="style18">!</span></p>
+  <p>&nbsp;  </p> -->
+</div>
+<form id="form1" name="form1" method="post" action="login.jsp">
+<div id="Layer1">
+  <table width="245" border="0">
+    <tr>
+      <td colspan="3" align="center"><img src="images/login.png" /></span></td>
+    </tr>
+    <tr>
+      <td width="70" align="right"><!--<span class="style3">User id</span> --><img src="images/userid.png" /></td>
+      <td width="6">&nbsp;</td>
+      <td width="145"><input name="uid" type="text" id="uid" required="required"/></td>
+    </tr>
+    <tr>
+      <td align="right"><!--<span class="style4">Password</span> --><img src="images/password.png" /></td>
+      <td>&nbsp;</td>
+      <td><input name="pwd" type="password" id="pwd"  required="required"/></td>
+    </tr>
+    <tr align="center">
+      <td colspan="3"><span class="style18">User Blocked Due to Spam</span> </td>
+    </tr>
+    <tr align="center">
+      <td colspan="3">
+        <input name="login" type="submit" id="login" value="Login" />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="reset" type="reset" id="reset" value="Reset" />        </td>
+    </tr>
+    <tr>
+      <td colspan="3"><a href="register.html" class="style10">Yet Not Registered ?<br />Sign UP for Free click here </a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div> </form>
+</body>
+</html>
